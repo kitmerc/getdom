@@ -30,3 +30,4 @@ if [ -n "$1" ];
                 echo "what a u want?"
 fi
 
+# Copyright (C) 2022 Kit Mercer </>
