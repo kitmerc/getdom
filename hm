@@ -1,4 +1,4 @@
-#!/bin/bash
+#/bin/bash
 if [ -n "$1" ];
         then
                 test=$(echo $1 | tr A-Z a-z | grep -o "http://")
@@ -29,5 +29,3 @@ if [ -n "$1" ];
         else
                 echo "what a u want?"
 fi
-
-# Copyright (C) 2022 Kit Mercer </>
