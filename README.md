@@ -12,6 +12,8 @@ Example:
 ```
 $ cd getdom
 
+$ sed -i -e 's/\r$//' hm
+
 $ chmod +x hm
 
 $ cp hm /usr/bin/hm
