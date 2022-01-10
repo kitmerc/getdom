@@ -1,0 +1,31 @@
+#!/bin/bash
+if [ -n "$1" ];
+        then
+                test=$(echo $1 | tr A-Z a-z | grep -o "http://")
+                test2=$(echo $1 | tr A-Z a-z | grep -o "https://")
+
+                if [[ $test == http:// ]];
+                        then
+                                total=$(echo $1 | tr A-Z a-z | cut -c 8-)
+
+                elif [[ $test2 == https:// ]];
+                        then
+                                total=$(echo $1 | tr A-Z a-z | cut -c 9-)
+
+                else
+                        total=$(echo $1 | tr A-Z a-z)
+                fi
+
+                check=$(expr index "$total" "/")
+
+                if [[ $check == 0 ]];
+                        then
+                                echo $total
+                        else
+                                let "last = $check - 1"
+                                echo $total | cut -c -"$last"
+                fi
+
+        else
+                echo "what a u want?"
+fi
