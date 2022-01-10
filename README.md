@@ -2,7 +2,7 @@
 a little bash script for getting only the domain from any link
 
 
-
+1
 *********
 
 just copy the hm file to the utilities section and give the rights
