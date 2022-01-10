@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ -n $1 ];
+if [ -n "$1" ];
         then
                 test=$(echo $1 | tr A-Z a-z | grep -o "http://")
                 test2=$(echo $1 | tr A-Z a-z | grep -o "https://")
