@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 if [ -n "$1" ];
         then
                 test=$(echo $1 | tr A-Z a-z | grep -o "http://")
